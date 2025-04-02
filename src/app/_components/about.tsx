@@ -37,7 +37,7 @@ export function About () {
           </div>
 
                 <div className="space-y-6 mt-6">
-                  <h2 className="text-6xl font-bold">SOBRE</h2>
+                  <h2 className="text-4xl font-bold">SOBRE</h2>
 
                   <p>
                   No nosso petshop, seu bichinho recebe toda a atenção que merece! Oferecemos banho, tosa, produtos 

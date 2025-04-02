@@ -1,8 +1,11 @@
+'use client'
 import {WhatsappLogo} from '@phosphor-icons/react/dist/ssr'
 import dogImg from '../../../public/hero-dog.webp'
 import catImg from '../../../public/cat-hero.png'
 import Image from 'next/image'
+import { useState } from 'react'
 export function Hero (){
+  
   return (
     <section className= "bg-[#E84C3D] text-white relative overflow-hidden ">
 

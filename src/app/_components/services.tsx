@@ -63,9 +63,9 @@ export function Services () {
     <section className="bg-white py-16">
         <div className="container mx-auto px-4"></div>
         <div>
-          <h2 className="text-4xl font-bold mb-12">Serviços</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center" data-aos="flip-down" data-aos-delay="200">Serviços</h2>
 
-          <div className="relative">
+          <div className="relative " data-aos="flip-down">
             <div className='over-flow-hidden' ref={emblaRef}>
                 <div className='flex'>
                   {services.map((item, index ) => (
@@ -90,7 +90,10 @@ export function Services () {
                                 <Clock className= 'w-4 h-4' />
                                 <span>{item.duration}</span>
                               </div>
-                              <a href="#"
+                              <a 
+                              target='_blank'
+                              href={`http://wa.me/5515997649525?text= Olá vim pelo site e gostaria de mais informações sobre
+                                ${item.title}`}
                               className='flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300'
                               >
                                 

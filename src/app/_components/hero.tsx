@@ -1,16 +1,17 @@
 'use client'
 import {WhatsappLogo} from '@phosphor-icons/react/dist/ssr'
 import dogImg from '../../../public/hero-dog.webp'
-import catImg from '../../../public/cat-hero.png'
+import catImg from '../../../public/gatonovo5.avif'
+
 import Image from 'next/image'
 import { useState } from 'react'
 export function Hero (){
   
   return (
-    <section className= "bg-[#E84C3D] text-white relative overflow-hidden ">
+    <section className= "bg-[#b253ca] text-white relative overflow-hidden ">
 
     <div>
-      <Image
+      <Image        
         src={dogImg}
         alt='Foto Cachorro'
         fill
@@ -25,15 +26,22 @@ export function Hero (){
 
 <article className='grid grid-cols-1 lg:grid-cols-2 gap-8 '>
   <div className='space-y-6'>
-    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+    <h1 
+      className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
+      data-aos="fade-down"
+      >
       Seu pet merece cuidado, carinho e atenção especial.
     </h1>
-    <p className="lg:text-lg">
+    <p className="lg:text-lg" data-aos="fade-right">
       Oferecemos os melhores serviços para garantir o bem estar e a felicidade do seu amigo de quatro patas.
     </p>
     <div>
-      <a href="#"
-      className="bg-green-500 px-5 py-2 rounded-md font-semibold flex
+      <a 
+        data-aos="fade-up"  
+        data-aos-delay="500"    
+        target='_blank'
+        href={ `http://wa.me/5515997649525?text= Olá vim pelo site e gostaria de mais informações`}
+        className="bg-green-500 px-5 py-2 rounded-md font-semibold flex
       item-center justify-center w-fit  gap-2"
       >
         <WhatsappLogo className='w-5 h-5'/>
@@ -45,8 +53,10 @@ export function Hero (){
         <b className= "bg-black text-white px-2 py-1 rounded -md">5%</b> de desconto na primeira compra.
       </p>
       <div className='flex mt-4'>
-        <div className='w-32 hidden lg:block'>
+        <div className='w-50 hidden lg:block'>
           <Image
+          data-aos="fade-right"
+          data-aos-delay="300"
           src={catImg}
           alt='Foto do Gato'
           quality={100}

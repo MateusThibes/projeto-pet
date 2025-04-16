@@ -4,6 +4,7 @@ import primier from '../../../public/primier.png'
 import whiskas from '../../../public/whiskas.png'
 import natural from '../../../public/natural.png'
 import Image from 'next/image'
+import { FacebookLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react/dist/ssr'
 
 const brands = [
   { name: "Royal Canin", logo: royal },
@@ -20,7 +21,7 @@ export function Footer () {
         <div className='container mx-auto px-4'>
           
           <div className='border-b border-white/20 pb-8'>
-              <h4 className='text-3xç font-semibold mb-8 text-center'>Nossos parceiros</h4>
+              <h4 className='text-3xl font-semibold mb-8 text-center'>Nossos parceiros</h4>
                 
                 <div className='grid grid-cols-2 lg:grid-cols-6 gap-8'>
                   {brands.map((item,index) => (
@@ -40,6 +41,52 @@ export function Footer () {
                   ))}
                 </div>
           </div>
+                
+                  <footer className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-5'>
+                  <div>
+                    <h3 className='text-2xl font-semibold mb-2'>Pet Shop de Mateus</h3>
+                    <p className='mb-4'>Cuidando do seu melhor amigo com amor e dedicação!</p>
+                    <a 
+                    target='_blank'
+                    href={ `http://wa.me/5515997649525?text= Olá vim pelo site e gostaria de tirar uma dúvida!`}
+                      className='bg-green-500 px-4 py-1 rounded-md '
+                    >  
+                        Contato via WhatsApp
+                    </a>
+                  </div>
+
+                  <div>
+                    <h3 className='text-2xl font-semibold mb-2'>Contatos</h3>
+                    <p>Email: mateusthibes2020@gmail.com</p>
+                    <p>Telefone: (15) 997649525</p>
+                    <p>Rua Doutor Coutinho 000, Centro, Itapetininga | SP</p>
+                  </div>
+
+                  <div>
+                    <h3 className='text-2xl font-semibold mb-2'>Redes sociais</h3>
+                    <div className='flex gap-4'>
+                      <a 
+                      href="#"
+                      target='_blank'
+                      >
+                        <FacebookLogo className='w-8 h-8'/>
+                      </a>
+                      <a 
+                      href="#"
+                      target='_blank'
+                      >
+                        <InstagramLogo className=' w-8 h-8'/>
+                      </a>
+                      <a 
+                      href="#"
+                      target='_blank'
+                      >
+                        <YoutubeLogo className='w-8 h-8'/>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  </footer>
 
         </div>
 
